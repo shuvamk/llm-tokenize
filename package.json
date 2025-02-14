@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "CLI tool to tokenize codebases for LLM usage",
   "type": "module",
+  "private": false,
   "bin": {
     "llm-tokenize": "./src/cli.js"
   },
