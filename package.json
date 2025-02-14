@@ -1,0 +1,50 @@
+{
+  "name": "llm-tokenize",
+  "version": "1.0.0",
+  "description": "CLI tool to tokenize codebases for LLM usage",
+  "type": "module",
+  "bin": {
+    "llm-tokenize": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "vitest",
+    "prepublishOnly": "npm test",
+    "local-run": "npm test && npm link && llm-tokenize ."
+  },
+  "keywords": [
+    "llm",
+    "tokenizer",
+    "cli",
+    "markdown"
+  ],
+  "author": "Shuvam Kumar <shuvamk>",
+  "license": "MIT",
+  "dependencies": {
+    "gpt-tokenizer": "^2.1.1",
+    "glob": "^10.3.3",
+    "commander": "^11.0.0",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1",
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.3"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuvamk/llm-tokenize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shuvamk/llm-tokenize/issues"
+  },
+  "homepage": "https://github.com/shuvamk/llm-tokenize#readme"
+}
