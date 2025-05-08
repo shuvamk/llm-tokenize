@@ -13,6 +13,18 @@ const IGNORED_DIRS = [
   ".next",
   ".nuxt",
   ".output",
+  "public",
+  "target",
+  ".turbo",
+  ".gradle",
+  ".mvn",
+  "out",
+  ".cache",
+  ".idea",
+  ".vscode",
+  "logs",
+  "tmp",
+  "temp",
 ];
 
 const IGNORED_FILES = [
